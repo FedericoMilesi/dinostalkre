@@ -4,7 +4,7 @@
 #define MEM_H
 
 MEM_InitAllocation();
-MEM_EndAllocation();
+void MEM_EndAllocation();
 MEM_Malloc();
 MEM_MallocAlign();
 MEM_FreeAll();

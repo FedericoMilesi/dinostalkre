@@ -4,7 +4,7 @@
 
 MEM_InitAllocation() {}
 
-MEM_EndAllocation() {}
+void MEM_EndAllocation() {}
 
 MEM_Malloc() {}
 

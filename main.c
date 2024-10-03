@@ -2,6 +2,8 @@
 
 #include "main.h"
 #include "devfont.h"
+#include "g_pad.h"
+#include "mem.h"
 #include "frozen_types.h"
 
 main() {}

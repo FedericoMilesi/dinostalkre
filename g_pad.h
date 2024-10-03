@@ -5,7 +5,7 @@
 
 gsPad_Init();
 gsPad_Reset();
-gsPad_End();
+void gsPad_End();
 gsPad_Update();
 gsPad_Update2();
 gsPad_GetNgc1();

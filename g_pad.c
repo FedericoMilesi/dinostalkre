@@ -6,7 +6,7 @@ gsPad_Init() {}
 
 gsPad_Reset() {}
 
-gsPad_End() {}
+void gsPad_End() {}
 
 static _gsPad_changeByOpton() {}
 
