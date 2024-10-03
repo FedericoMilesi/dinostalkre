@@ -30,6 +30,7 @@ _gsMuteki_INIT() {}
 
 _gsMuteki_EXEC() {}
 
+/* empty */
 _gsMuteki_END() {}
 
 _gsOmakePower_INIT() {}
