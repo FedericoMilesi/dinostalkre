@@ -24,4 +24,5 @@ _gsOmakePower_INIT() {}
 
 _gsOmakePower_EXEC() {}
 
+/* empty */
 _gsOmakePower_END() {}
