@@ -5,7 +5,7 @@
 
 sceDevConsInit();
 sceDevConsOpen();
-sceDevConsClose();
+void sceDevConsClose(int arg0);
 sceDevConsRef();
 sceDevConsDraw();
 sceDevConsDrawS();

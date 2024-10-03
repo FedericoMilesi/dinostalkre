@@ -1,6 +1,8 @@
 // STATUS: NOT STARTED
 
 #include "main.h"
+#include "devfont.h"
+#include "frozen_types.h"
 
 main() {}
 
@@ -12,7 +14,15 @@ static InitSif() {}
 
 static SetDefaultGsEnv() {}
 
-static EndSystem() {}
+/* 100% match */
+static void EndSystem() 
+{
+    sceDevConsClose(gConsole);
+    
+    gsPad_End();
+    
+    MEM_EndAllocation();
+}
 
 _gsMuteki_INIT() {}
 
