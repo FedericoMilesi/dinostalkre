@@ -26,6 +26,7 @@ static void EndSystem()
     MEM_EndAllocation();
 }
 
+/* empty */
 _gsMuteki_INIT() {}
 
 _gsMuteki_EXEC() {}
