@@ -10,4 +10,13 @@ gsEventFlagOff() {}
 
 gsEventFlagCtrlOfSwitchLine() {}
 
-gsEvtFlag255Clear() {}
+/* 100% match */ 
+void gsEvtFlag255Clear()
+{
+    int i;
+    
+    for (i = 0; i < 256; i++) 
+    {
+        gsEventFlagOff(i);
+    } 
+}

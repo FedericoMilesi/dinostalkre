@@ -7,6 +7,6 @@ gsEventFlagOnOffCheck();
 gsEventFlagOn();
 gsEventFlagOff();
 gsEventFlagCtrlOfSwitchLine();
-gsEvtFlag255Clear();
+void gsEvtFlag255Clear();
 
 #endif // AIR_A_EVTFLG_H
