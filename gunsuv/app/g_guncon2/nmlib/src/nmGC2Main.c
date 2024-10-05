@@ -91,17 +91,18 @@ struct _sif_queue_data {
 
 typedef _sif_queue_data sceSifQueueData;
 
-struct nm_TimerRegAdr_tag {
+typedef struct nm_TimerRegAdr_tag {
 	u_int *count;
 	u_int *mode;
 	u_int *comp;
 	u_int *hold;
-};
+} nm_TimerRegAdr_t;
 
-typedef nm_TimerRegAdr_tag nm_TimerRegAdr_t;
+//typedef nm_TimerRegAdr_tag nm_TimerRegAdr_t;
 
-static nm_TimerRegAdr_t nm_TimerRegAdr[0] = {
-};
+static nm_TimerRegAdr_t nm_TimerRegAdr[1];
+//static nm_TimerRegAdr_t nm_TimerRegAdr[0] = {
+//};
 
 static int nm_MeterTimerNo = 0;
 static sceSifClientData cdUsbGun;
@@ -125,8 +126,14 @@ int nmUsbTransCtrl(int no, u_char *data) {}
 
 int nmUsbGunSync(int mode) {}
 
-void nmPadTimerReset() {
-	int no;
+/* 100% match */
+void nmPadTimerReset() 
+{
+    int no;
+
+    no = *nm_TimerRegAdr[nm_MeterTimerNo].count;
+    
+    time0 = no;
 }
 
 void nmPadWaitTimer(int time) {
