@@ -12,7 +12,7 @@ sceGsPutDrawEnv();
 sceGsSetDefDBuff();
 sceGsSwapDBuff();
 sceGsSyncV();
-sceGsSyncPath();
+int sceGsSyncPath(int mode, unsigned short timeout);
 sceGsSetDefTexEnv();
 sceGsSetDefAlphaEnv();
 sceGsSetDefLoadImage();

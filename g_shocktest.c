@@ -4,6 +4,8 @@
 #include "libgf.h"
 #include "g_shock.h"
 #include "mem.h"
+#include "graphdev.h"
+#include "g_sound.h"
 
 int frame;
 
@@ -27,4 +29,15 @@ void G_SHOCKTEST_Init()
 
 G_SHOCKTEST_Exec() {}
 
-G_SHOCKTEST_End() {}
+/* 100% match */
+void G_SHOCKTEST_End() 
+{
+    sceGsSyncPath(0, 0);
+    
+    gsSoundClose();
+    gsSoundSeMain();
+    
+    GF_EndGraphicsFramework();
+    
+    MEM_FreeAll();
+}

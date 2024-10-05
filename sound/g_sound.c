@@ -36,13 +36,13 @@ gsSoundBgmStop() {}
 
 gsSoundBgmCrossFade() {}
 
-gsSoundClose() {}
+void gsSoundClose() {}
 
 gsSoundSetEffect() {}
 
 gsSoundGetEffect() {}
 
-gsSoundSeMain() {}
+void gsSoundSeMain() {}
 
 gsSoundMasterVol() {}
 
