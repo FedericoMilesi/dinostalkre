@@ -2,7 +2,7 @@
 
 #include "g_shock.h"
 
-gsShockInit() {}
+void gsShockInit() {}
 
 gsShockManagement() {}
 

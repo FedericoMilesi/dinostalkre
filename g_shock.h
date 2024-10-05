@@ -3,7 +3,7 @@
 #ifndef G_SHOCK_H
 #define G_SHOCK_H
 
-gsShockInit();
+void gsShockInit();
 gsShockManagement();
 gsShockSetSeqVel();
 gsShockSetSeq();

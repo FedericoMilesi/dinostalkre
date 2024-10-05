@@ -9,7 +9,7 @@ MEM_Malloc();
 MEM_MallocAlign();
 void MEM_FreeAll();
 MEM_Free();
-MEM_CheckViolation();
+void MEM_CheckViolation();
 MEM_DumpAllocationInfo();
 
 #endif // MEM_H

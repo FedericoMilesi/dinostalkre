@@ -30,7 +30,7 @@ static mem_SearchAllocInfo() {}
 
 static mem_GetMagicNumber() {}
 
-MEM_CheckViolation() {}
+void MEM_CheckViolation() {}
 
 static mem_CheckViolation() {}
 
