@@ -1,6 +1,7 @@
 // STATUS: NOT STARTED
 
 #include "gfinstance.h"
+#include "libvu0.h"
 
 Float32 gf_sortKeyMax = 50.f;
 Float32 gf_sortKeyMin = 0.f;
