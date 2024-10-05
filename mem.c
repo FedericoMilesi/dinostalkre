@@ -4,7 +4,11 @@
 
 MEM_InitAllocation() {}
 
-void MEM_EndAllocation() {}
+/* 100% match */
+void MEM_EndAllocation() 
+{
+    MEM_FreeAll();
+}
 
 MEM_Malloc() {}
 
@@ -16,7 +20,7 @@ static mem_CheckAlignment() {}
 
 static _mem_free() {}
 
-MEM_FreeAll() {}
+void MEM_FreeAll() {}
 
 MEM_Free() {}
 

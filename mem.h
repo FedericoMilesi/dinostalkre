@@ -7,7 +7,7 @@ MEM_InitAllocation();
 void MEM_EndAllocation();
 MEM_Malloc();
 MEM_MallocAlign();
-MEM_FreeAll();
+void MEM_FreeAll();
 MEM_Free();
 MEM_CheckViolation();
 MEM_DumpAllocationInfo();
