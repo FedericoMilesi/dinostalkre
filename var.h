@@ -1,4 +1,4 @@
-// STATUS: NOT STARTED
+// STATUS: EMPTY
 
 #ifndef VAR_H
 #define VAR_H

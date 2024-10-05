@@ -1,3 +1,3 @@
-// STATUS: NOT STARTED
+// STATUS: EMPTY
 
 #include "var.h"
