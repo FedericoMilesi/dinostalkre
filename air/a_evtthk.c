@@ -12,6 +12,10 @@ gsEventMatrixCmpDataINT() {}
 
 gsEventMatrixCmpDataFLOAT() {}
 
-gsGetRandINT() {}
+/* 100% match */
+int gsGetRandINT(int arg0) 
+{
+    return ((rand() % 1000) * 8) % (arg0 + 1);
+}
 
 gsRotChange() {}

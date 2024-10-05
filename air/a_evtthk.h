@@ -8,7 +8,7 @@ gsThinkMatrixDataCheck();
 gsThinkMatrixDataCheck2();
 gsEventMatrixCmpDataINT();
 gsEventMatrixCmpDataFLOAT();
-gsGetRandINT();
+int gsGetRandINT(int arg0);
 gsRotChange();
 
 #endif // AIR_A_EVTTHK_H
