@@ -3,6 +3,8 @@
 #ifndef LIBVU0_H
 #define LIBVU0_H
 
+#include "types.h"
+
 sceVu0ApplyMatrix();
 sceVu0MulMatrix();
 sceVu0OuterProduct();
@@ -19,7 +21,7 @@ sceVu0MulVector();
 sceVu0ScaleVector();
 sceVu0TransMatrix();
 sceVu0CopyVector();
-sceVu0CopyMatrix();
+void sceVu0CopyMatrix(sceVu0FMATRIX m0, sceVu0FMATRIX m1);
 sceVu0FTOI4Vector();
 sceVu0FTOI0Vector();
 sceVu0ITOF4Vector();

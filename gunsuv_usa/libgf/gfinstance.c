@@ -2085,7 +2085,12 @@ qword* GFInstance_Draw(qword *packet) {
 
 void GFInstance_InitHead(GF_INSTANCE *inst) {}
 
-void GFInstance_SetLocalMatrix(GF_INSTANCE *inst, float *m[4]) {}
+/* 100% match */
+void GFInstance_SetLocalMatrix(GF_INSTANCE *inst, sceVu0FMATRIX m)
+//void GFInstance_SetLocalMatrix(GF_INSTANCE *inst, float *m[4]) 
+{
+    sceVu0CopyMatrix(inst->localMatrix, m);
+}
 
 void GFInstance_AddChild(GF_INSTANCE *parent, GF_INSTANCE *child) {
 	GF_INSTANCE *inst;

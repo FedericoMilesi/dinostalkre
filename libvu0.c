@@ -34,7 +34,7 @@ sceVu0TransMatrix() {}
 
 sceVu0CopyVector() {}
 
-sceVu0CopyMatrix() {}
+void sceVu0CopyMatrix(sceVu0FMATRIX m0, sceVu0FMATRIX m1) {}
 
 sceVu0FTOI4Vector() {}
 
