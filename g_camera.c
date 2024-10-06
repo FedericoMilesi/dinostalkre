@@ -45,7 +45,11 @@ void gsCameraSetParam_START_GAME()
 
 gsCameraSetParam_AFTER_STAGE() {}
 
-gsCameraSetParam_FROM_CONTINUE() {}
+/* 100% match */
+void gsCameraSetParam_FROM_CONTINUE() 
+{
+    gsCamera.unkF4 = 5.0f;
+}
 
 gsManagementCamera() {}
 
