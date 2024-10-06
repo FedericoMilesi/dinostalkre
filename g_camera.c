@@ -1,6 +1,11 @@
 // STATUS: NOT STARTED
 
 #include "g_camera.h"
+#include "frozen_types.h"
+
+extern Unknown1 gsArmsTypeTbl;
+
+extern Camera gsCamera;
 
 gsSetCameraMatrix() {}
 
@@ -12,7 +17,31 @@ gsMoveCamera() {}
 
 gsInitCamera() {}
 
-gsCameraSetParam_START_GAME() {}
+/* 100% match */
+void gsCameraSetParam_START_GAME() 
+{
+    gsCamera.unk1A4 = 0;
+    
+    gsCamera.unkF4 = 5.0f;
+    
+    gsArmsTypeTbl.unk0 = 1;
+    gsArmsTypeTbl.unk4 = 2;
+    gsArmsTypeTbl.unk8 = 4;
+    gsArmsTypeTbl.unkC = 4;
+    
+    gsCamera.unk230 = 0;
+    gsCamera.unk234 = 0;
+    gsCamera.unk240 = 0;
+    gsCamera.unk244 = 0;
+    gsCamera.unk250 = 0;
+    gsCamera.unk254 = 0;
+    gsCamera.unk258 = 0;
+    gsCamera.unk260 = 0;
+    gsCamera.unk25C = 0;
+    gsCamera.unk264 = 0;
+    gsCamera.unk268 = 0;
+    gsCamera.unk26C = 0;
+}
 
 gsCameraSetParam_AFTER_STAGE() {}
 
