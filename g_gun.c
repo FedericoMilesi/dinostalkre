@@ -88,7 +88,7 @@ gsGunBulletCheckEnd_SPARK() {}
 
 gsGunCheckReload() {}
 
-gsGunGetReloadBullet() {}
+int gsGunGetReloadBullet(int arg0) {}
 
 static _gsGunEntryGun() {}
 

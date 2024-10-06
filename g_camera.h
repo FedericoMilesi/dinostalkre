@@ -9,7 +9,7 @@ gsCameraCalcRotMatrix_COMPEL();
 gsMoveCamera();
 gsInitCamera();
 void gsCameraSetParam_START_GAME();
-gsCameraSetParam_AFTER_STAGE();
+void gsCameraSetParam_AFTER_STAGE();
 void gsCameraSetParam_FROM_CONTINUE();
 gsManagementCamera();
 gsManagementCamera_COMPEL();

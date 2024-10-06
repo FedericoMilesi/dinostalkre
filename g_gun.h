@@ -45,7 +45,7 @@ gsGunAdjustBulletLine_SPARK2();
 gsGunAdjustBulletLine_SPARK3();
 gsGunBulletCheckEnd_SPARK();
 gsGunCheckReload();
-gsGunGetReloadBullet();
+int gsGunGetReloadBullet(int arg0);
 gsGunEntryGun();
 gsGunEntryGun_STRONG();
 gsGunSpecial_STRONG();

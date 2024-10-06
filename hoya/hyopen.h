@@ -8,7 +8,7 @@ hyWepRankGetWeaponNo();
 hyGetStageNumber();
 gsResultInit();
 gsResultAllInit();
-hyReflectResultData();
+void hyReflectResultData();
 hyReflectResultData_FROM_CONTINUE();
 gsOptionInit();
 gsPauseResetProc();
