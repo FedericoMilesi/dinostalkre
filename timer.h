@@ -6,7 +6,7 @@
 TIMER_InitTimer();
 TIMER_SetTimer();
 TIMER_StartTimer();
-TIMER_StopTimer();
+unsigned short TIMER_StopTimer(int arg0);
 unsigned short TIMER_GetTimer(int arg0);
 
 #endif // TIMER_H
