@@ -2093,8 +2093,36 @@ void GFInstance_SetLocalMatrix(GF_INSTANCE *inst, sceVu0FMATRIX m)
     sceVu0CopyMatrix(inst->localMatrix, m);
 }
 
-void GFInstance_AddChild(GF_INSTANCE *parent, GF_INSTANCE *child) {
-	GF_INSTANCE *inst;
+/* 100% match */
+void GFInstance_AddChild(GF_INSTANCE *parent, GF_INSTANCE *child) 
+{
+    GF_INSTANCE* inst;
+    GF_INSTANCE* temp; // not from STABS
+    GF_INSTANCE* temp2; // not from STABS
+
+    child->parent = parent;
+    
+    if (parent->child != NULL) 
+    {
+        temp = parent->child->bros;
+        
+        inst = parent->child;
+        
+        while (inst->bros != NULL) 
+        {
+            inst = temp;
+            
+            temp2 = inst->bros;
+            
+            temp = temp2;
+        } 
+        
+        inst->bros = child;
+    }
+    else 
+    {
+        parent->child = child;
+    }
 }
 
 void GFInstance_Remove(GF_INSTANCE *inst) {
