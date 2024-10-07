@@ -14,6 +14,17 @@ typedef struct Unknown2 {
     int unkC8[1];
 } Unknown2;
 
+typedef struct Unknown3 {
+    char pad[254];
+    int unk100;
+    int unk104;
+    int unk108;
+    int unk10C;
+    int unk110;
+    int unk114;
+    int unk118;
+} Unknown3;
+
 typedef struct Camera {
     char pad[244];
     float unkF4;
