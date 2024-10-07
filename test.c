@@ -1,8 +1,23 @@
 // STATUS: NOT STARTED
 
 #include "test.h"
+#include "gftex.h"
+#include "fileio.h"
 
-TEST_LoadTexture() {}
+/* 100% match */
+int TEST_LoadTexture(int arg0, int arg1)
+{
+    int temp;
+
+    temp = GFTex_Add(FIO_ReadFile_Align(arg0, 64));
+    
+    if (arg1 != 0) 
+    {
+        GFTex_LoadImage(temp);
+    }
+    
+    return temp;
+}
 
 TEST_EntryTexture() {}
 

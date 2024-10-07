@@ -5,7 +5,7 @@
 
 FIO_ReadFile();
 FIO_ReadFile_NoChk();
-FIO_ReadFile_Align();
+int* FIO_ReadFile_Align(int arg0, int arg1);
 FIO_ReadFile_Align2();
 FIO_ReadFilePartly();
 FIO_ReadFilePartly_Align();

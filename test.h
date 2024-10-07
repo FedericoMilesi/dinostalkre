@@ -3,7 +3,7 @@
 #ifndef TEST_H
 #define TEST_H
 
-TEST_LoadTexture();
+int TEST_LoadTexture(int arg0, int arg1);
 TEST_EntryTexture();
 TEST_Sync();
 TEST_SetObjMatrix();
