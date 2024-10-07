@@ -9,7 +9,7 @@ int hyGetStageNumber(int arg0);
 gsResultInit();
 gsResultAllInit();
 void hyReflectResultData();
-hyReflectResultData_FROM_CONTINUE();
+void hyReflectResultData_FROM_CONTINUE();
 gsOptionInit();
 gsPauseResetProc();
 SetOptionScreenAdjust();

@@ -20,7 +20,7 @@ gsTimerSetFrame() {}
 
 gsTimerGetFrame() {}
 
-gsTimerGetPathTime() {}
+int gsTimerGetPathTime() {}
 
 gsTimerCntTime() {}
 

@@ -11,7 +11,7 @@ gsTimerSetTime();
 gsTimerGetTime();
 gsTimerSetFrame();
 gsTimerGetFrame();
-gsTimerGetPathTime();
+int gsTimerGetPathTime();
 gsTimerCntTime();
 gsTimerPauseTime();
 gsTimerPauseTimeEx();
