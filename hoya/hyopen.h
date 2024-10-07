@@ -5,7 +5,7 @@
 
 hyWepRankGetWeaponRank();
 hyWepRankGetWeaponNo();
-hyGetStageNumber();
+int hyGetStageNumber(int arg0);
 gsResultInit();
 gsResultAllInit();
 void hyReflectResultData();

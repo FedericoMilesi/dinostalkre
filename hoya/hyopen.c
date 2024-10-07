@@ -2,11 +2,17 @@
 
 #include "hyopen.h"
 
+int stageNumber[1];
+
 hyWepRankGetWeaponRank() {}
 
 hyWepRankGetWeaponNo() {}
 
-hyGetStageNumber() {}
+/* 68% match */
+int hyGetStageNumber(int arg0) 
+{
+    return stageNumber[arg0];
+}
 
 gsResultInit() {}
 
